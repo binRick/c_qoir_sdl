@@ -1,0 +1,3 @@
+[submodule "submodules/qoir"]
+	path = submodules/qoir
+	url = https://github.com/nigeltao/qoir
