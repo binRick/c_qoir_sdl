@@ -9,7 +9,7 @@ build: meson
 
 clean:
 	@rm -rf build
-all: meson 
+all: meson test
 tidy:
 	@uncrustify -c ~/repos/c_deps/etc/uncrustify.cfg --replace \
 		*/*.h */*.c
@@ -18,3 +18,5 @@ tidy:
 install: build
 	@meson install -C build
 
+test:
+	@meson test -C build --verbose

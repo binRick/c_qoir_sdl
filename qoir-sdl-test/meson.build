@@ -8,6 +8,8 @@ qoir_sdl_test_include_dirs = [
 ]
 qoir_sdl_test_deps = [
   qoir_sdl_dep,
+  sdl2_dep,
+  sdl2_image_dep,
 ]
 qoir_sdl_test_c_args = [
 ]

@@ -6,13 +6,17 @@ inc = get_variable('inc', join_paths(meson.current_source_dir(),'..'))
 
 qoir_sdl_include_dirs = [
   '.',
+  '../',
   inc,
 ]
 
 qoir_sdl_deps = [
+  sdl2_dep,
+  sdl2_image_dep,
 ]
 
 qoir_sdl_c_args = [
+  '-DQOIR_IMPLEMENTATION',
 ]
 
 qoir_sdl_link_args = [
