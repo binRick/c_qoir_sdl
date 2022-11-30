@@ -12,7 +12,7 @@ clean:
 all: meson 
 tidy:
 	@uncrustify -c ~/repos/c_deps/etc/uncrustify.cfg --replace \
-		src/*.h src/*.c
+		*/*.h */*.c
 	@rm *unc-backup* */*unc-backup* 2>/dev/null||true
 
 install: build

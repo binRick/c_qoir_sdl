@@ -20,8 +20,8 @@
 module(qoir_sdl) {
   define(qoir_sdl, CLIB_MODULE);
 };
-int qoir_sdl_init(module(qoir_sdl) *exports);
-void qoir_sdl_deinit(module(qoir_sdl) *exports);
+int  qoir_sdl_init(module(qoir_sdl) * exports);
+void qoir_sdl_deinit(module(qoir_sdl) * exports);
 exports(qoir_sdl) {
   .init   = qoir_sdl_init,
   .deinit = qoir_sdl_deinit,

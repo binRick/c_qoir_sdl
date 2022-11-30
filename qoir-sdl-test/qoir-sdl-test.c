@@ -1,12 +1,12 @@
-#include "fsio.h"
 #include "c_greatest/greatest/greatest.h"
-#include "stringbuffer.h"
-#include "stringfn.h"
+#include "fsio.h"
 #include "module/def.h"
 #include "module/module.h"
 #include "module/require.h"
 #include "qoir-sdl-test/qoir-sdl-test.h"
 #include "qoir-sdl/qoir-sdl.h"
+#include "stringbuffer.h"
+#include "stringfn.h"
 
 TEST t_qoir_sdl_test2(){
   PASS();

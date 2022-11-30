@@ -4,12 +4,12 @@
 #include "qoir-sdl/qoir-sdl.h"
 ////////////////////////////////////////////
 #include "fsio.h"
-#include "stringbuffer.h"
-#include "stringfn.h"
-#include "submodules/qoir/src/qoir.h"
 #include "module/def.h"
 #include "module/module.h"
 #include "module/require.h"
+#include "stringbuffer.h"
+#include "stringfn.h"
+#include "submodules/qoir/src/qoir.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
