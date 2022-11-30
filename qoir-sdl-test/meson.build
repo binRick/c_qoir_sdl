@@ -25,6 +25,7 @@ if get_option('enable-binaries')
      include_directories: qoir_sdl_test_include_dirs,
      link_args: qoir_sdl_test_link_args,
      c_args: qoir_sdl_test_c_args,
+     link_whole: [c_qoir_sdl_util_lib],
      install: false,
   )
   test('qoir-sdl-test', 

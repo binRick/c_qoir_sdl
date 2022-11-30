@@ -1,3 +1,6 @@
 [submodule "submodules/qoir"]
 	path = submodules/qoir
 	url = https://github.com/nigeltao/qoir
+[submodule "submodules/incbin"]
+	path = submodules/incbin
+	url = https://github.com/graphitemaster/incbin

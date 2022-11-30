@@ -6,6 +6,7 @@ cc = meson.get_compiler('c')
 pwd = meson.current_source_dir()
 inc = [
   include_directories(
+    '/usr/local/include/sdl2',
     'src',
     'include',
     'dist','dist/src','dist/include',
@@ -19,6 +20,12 @@ sdl2_dep = dependency('SDL2',fallback:['sdl2', 'sdl2_dep'], required: true)
 sdl2_ttf_dep = dependency('SDL2_ttf', required: true, fallback:['sdl2_ttf','sdl2_ttf_dep'])
 sdl2_image_dep = dependency('SDL2_image', required: true, fallback:['sdl2_image','sdl2_image_dep'])
 sdl2_gfx_dep = dependency('SDL2_gfx', required: false)
+
+c_qoir_sdl_global_arguments=[
+  '-DINCBIN_SILENCE_BITCODE_WARNING',
+  ]
+
+add_global_arguments(c_qoir_sdl_global_arguments,language:['c'])
 
 c_qoir_sdl_util_link_args=[
   ]

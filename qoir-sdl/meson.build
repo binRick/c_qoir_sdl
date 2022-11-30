@@ -5,6 +5,7 @@ qoir_sdl_srcs = [
 inc = get_variable('inc', join_paths(meson.current_source_dir(),'..'))
 
 qoir_sdl_include_dirs = [
+  '/usr/local/include/sdl2',
   '.',
   '../',
   inc,
